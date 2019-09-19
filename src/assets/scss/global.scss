@@ -1,19 +1,34 @@
-html,body{
-    padding: 0%;
-    margin: 0%
-}
-.titulo{
-color: red;
-}
+body{
+  div{
+    border: 1px solid;
 
-@font-face{
-    font-family: 'myfont';
-src: url('/src/assets/fonts/Roboto-Medium.ttf');
-font-weight: normal;
-font-style: normal;
-}
-
-.subtitle{
-    color:white;
-    background-color: green; 
+    .banner{
+      display: grid;
+      grid-gap: 15px;
+      padding: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      .flycard {
+        display: block;
+        margin-bottom: -25px;
+        color: #333;
+        text-decoration: none;
+        
+        h2{
+          font-size:10px
+      
+        }
+      }
+      .containercard{
+        display: grid;
+      grid-gap: 15px;
+      padding: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
     }
+
+    
+    
+  }
+
+
+}
