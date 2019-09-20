@@ -1,9 +1,10 @@
 import React from 'react';
-
-const Flycard =()=>{
+let TitleCard='CPM';
+let SubtitleCar='105555000'
+const Flycard =({cto,bestPrice,label,id,customid})=>{
 return <button className={"flycard"}>
-<h2>viaja por 7 dias</h2>
-<h2>40000</h2>
+<h2>{cto}</h2>
+<h2>{SubtitleCar}</h2>
 </button>
 }
-export default Flycard;
+export default Flycard; 
