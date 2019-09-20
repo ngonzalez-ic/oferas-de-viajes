@@ -1,0 +1,29 @@
+import React from 'react';
+import { useFetch } from "./hooks";
+const url='https://api.graph.cool/simple/v1/cjtk3okib547g0182680rna24'
+const query = `{
+    Movie(title: "Inception") {
+      releaseDate
+      actors {
+        name
+      }
+    }
+  }`
+    const Conection= ()=> {
+        const [data, loading] = useFetch(
+            url,query
+          );
+
+          {loading ? (
+            "Loading..."
+          ) : (
+              'ya anda'
+          )}
+    return <div >
+
+    </div>
+}
+
+export default Conection;
+
+
