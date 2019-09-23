@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from '../assets/images/logo.jpg';
+import logo from '../assets/images/logogris.jpg';
 
 const head=()=>{
 
-    return <div>
-        <div>
+    return <div className='head'>
+        <div className='logo'>
             <img src={logo}></img>
-            <span>el titulo de algo</span>
+           
         </div>
+        <div> <span>el titulo de algo</span></div>
 
     </div>
 }

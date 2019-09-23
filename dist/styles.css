@@ -1,28 +1,74 @@
-body div {
-  border: 1px; }
-  body div .banner {
-    display: grid;
-    grid-gap: 15px;
-    padding: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-    body div .banner .flycard {
-      display: block;
-      margin-bottom: -25px;
-      color: #333;
-      text-decoration: none; }
-      body div .banner .flycard h2 {
-        font-size: 10px; }
-    body div .banner .flycard:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-  body div .containercard {
-    display: grid;
-    grid-gap: 90px;
-    padding: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-    body div .containercard .card {
-      /* Add shadows to create the "card" effect */
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s; }
-    body div .containercard .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+body {
+  font-family: Roboto; }
+  body div {
+    border: 1px solid #ff0000; }
+  body div#app {
+    border: 1px solid; }
+    body div#app .head {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+      padding: 15px;
+      justify-items: center; }
+    body div#app .logo {
+      text-align: left; }
+    body div#app .banner {
+      height: 95px;
+      background-image: url("http://localhost:8080/src/assets/images/banner.png"); }
+    body div#app .subtitle {
+      margin-top: -15px;
+      font-size: 25px;
+      text-align: center;
+      color: white;
+      font-weight: 300; }
+      body div#app .subtitle span {
+        font-weight: 700; }
+    body div#app .flycard {
+      justify-items: center;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      margin-top: -75px;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      grid-auto-rows: 90px; }
+      @media (max-width: 700px) {
+        body div#app .flycard {
+          grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); } }
+    body div#app .estadia {
+      color: red;
+      width: 95%;
+      height: 60%;
+      background-color: white;
+      margin-top: 35px; }
+      body div#app .estadia .label {
+        color: black;
+        size: 16px;
+        height: 20px;
+        text-align: left; }
+        body div#app .estadia .label p {
+          margin: 2%; }
+      body div#app .estadia .bestPrice {
+        color: blue;
+        font-weight: bold;
+        text-align: left;
+        height: 20px; }
+        body div#app .estadia .bestPrice p {
+          margin: 2%; }
+    body div#app .containercard {
+      display: grid;
+      grid-gap: 90px;
+      padding: 30px;
+      text-align: center; }
+    body div#app .card {
+      justify-content: left;
+      display: grid;
+      text-align: left;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      background-color: white;
+      margin-right: 200px;
+      margin-left: 200px; }
+      body div#app .card .layoutCard {
+        display: grid;
+        border: 1px; }
 
