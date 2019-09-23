@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/logogris.jpg';
+import logo from '../assets/images/logo.jpg';
 
 const head=()=>{
 
@@ -8,7 +8,9 @@ const head=()=>{
             <img src={logo}></img>
            
         </div>
-        <div> <span>el titulo de algo</span></div>
+        <div className= 'title'> 
+        <span>Viajar es la guita mejor invertida</span>
+        </div>
 
     </div>
 }

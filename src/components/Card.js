@@ -2,14 +2,15 @@ import React from 'react';
 import plane from '../assets/images/favicon.ico';
 
 const Card = ({ price, imgUrl, id, stayId, description, scale, link }) => {
-    return <div className='layoutCard'>
+    return <div className='layoutCard' >
         <div>
-            <img src={imgUrl} width='300'>
-            </img></div>
+            <a href="https://www.avantrip.com/" target="_blank">
+            <img src={imgUrl} width='250'></img></a>
+            </div>
         <div className='elements'>
 
 
-            <img src={plane} className='elementPlane'></img>
+            <img className='elementPlane'src={plane}></img>
 
             <span className='elementScale'>Directo </span>
 
@@ -18,8 +19,8 @@ const Card = ({ price, imgUrl, id, stayId, description, scale, link }) => {
             <h3 className='elemenPrice'>{price}</h3>
 
             <h3 className='elementDescription'>{description}</h3>
-            
-            <span className='elemenfly'>Ver Vuelo</span>
+            <div className='clearfloat'></div>
+            <button className='elemenfly'>VER VUELO</button>
         </div>
 
     </div >

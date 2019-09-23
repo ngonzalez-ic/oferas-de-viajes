@@ -8,12 +8,11 @@ import ContainerCards from './ContainerCard';
     const App= ()=> {
 
     return <div >
-           <ContainerCards/>
+           <Head/>
+           <Banner/>
+        <ContainerCards/>
     </div>
 }
-/* <Head/>
-        <Banner/>
-        <ContainerCards/>*/
 
         //<Nuevo/>
 export default App;

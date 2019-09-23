@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-let CardUnit = { price: '00', imgUrl: 'https://static.avantrip.com/fkt-flight/images/img-cluster-punta-cana.jpg', id: '01', stayId: '03', description: '7 dias shopping' };
+let CardUnit = { price: '00', imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png', id: '01', stayId: '03', description: '7 dias convencion  2019' };
 let CardList = [CardUnit,CardUnit,CardUnit,CardUnit];
 
 const ContainerCards = () => {
