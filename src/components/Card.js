@@ -5,7 +5,7 @@ const Card = ({ price, imgUrl, id, stayId, description, scale, link }) => {
     return <div className='layoutCard' >
         <div>
             <a href="https://www.avantrip.com/" target="_blank">
-            <img src={imgUrl} width='250'></img></a>
+            <img src={imgUrl} width='300'height='300'></img></a>
             </div>
         <div className='elements'>
 

@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { Context } from "../store/index";
 
-let bestPrice = '0000';
-let label = 'viaja por 7 dias';
-let id = 0;
-let customid = 0;
-const Flycard = ({ bestPrice, label, id, customid }) => {
-    return <button className='estadia'>
+
+const Flycard = ({ bestPrice, label, id, customId }) => {
+    const { store, dispatch } = useContext(Context);
+
+    return <button className='estadia' onClick={()=>{
+        dispatch({type:'setCurrent',customId:customId})
+    }}>
         <div className= 'label'>
             <p>{label}</p>
         </div>

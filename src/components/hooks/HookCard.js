@@ -16,4 +16,7 @@ function useFetch(url, query) {
   }, []);
   return [data, loading];
 }
+
+
+
 export { useFetch };
