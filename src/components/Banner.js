@@ -1,6 +1,7 @@
 import React from 'react';
 import Flycard from './Flycard';
-let FlycardUnit = { bestPrice: 2800000, label: 'viaja por 7 dias' };
+
+let FlycardUnit = { bestPrice: 2800000, label: 'viaja por 7 dias',customid:'1' };
 let FlycardList = [FlycardUnit, FlycardUnit, FlycardUnit, FlycardUnit, FlycardUnit];
 const Banner = () => {
     return <div className="banner">
@@ -13,6 +14,8 @@ const Banner = () => {
                     return <Flycard
                         label={element.label}
                         bestPrice={element.bestPrice}
+                        customid={element.customid}
+
                     />
                 }
             )}</div>
