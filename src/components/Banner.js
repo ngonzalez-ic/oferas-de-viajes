@@ -1,4 +1,4 @@
-import React, { useContext,useState } from 'react';
+import React, { useContext, useState } from "react";
 import { Context } from "../store/index";
 import { useFetch } from "../components/hooks/HookCard";
 
@@ -15,21 +15,21 @@ import Flycard from './Flycard';
 
 
 
-const Banner= () => {
-    const { store} = useContext(Context);
+const Banner = () => {
+    const { store } = useContext(Context);
     const [LocalCustomId, setLocalCustomId] = useState(0);
     const [data, loading] = useFetch(
         url, query
-      );
+    );
 
     return <div className="banner">
         <div className='subtitle'><h3>Los vuelos mas baratos para estadia en<span  > Miami</span></h3>
 
             <br />
             <div className="flycard">    {data && data.allStayDatas && data.allStayDatas.map(
-                //todo dento de los () es un a funcion => 
-                element => {
+                (element, i) => {
                     return <Flycard
+                        key={i}
                         label={element.label}
                         bestPrice={element.bestPrice}
                         customId={element.customId}

@@ -1,7 +1,6 @@
-const path = require('path');
-const HtmlWebpackPluguin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const path = require('path')
+const HtmlWebpackPluguin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     entry: './src/pages/index.js',
@@ -17,33 +16,32 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 use: ['babel-loader'],
-                exclude: /node_module/,
+                exclude: /node_module/
             },
             {
                 test: /\.(png|jpe?g|gif|ico|jfif)$/i,
                 loader: 'file-loader',
                 options: {
-                    name: '[path][name].[ext]',
-                },
+                    name: '[path][name].[ext]'
+                }
             },
             {
                 test: /\.(woff|woff2|ttf|eot)$/i,
                 loader: 'file-loader',
                 options: {
-                    name: '[path][name].[ext]',
-                },
+                    name: '[path][name].[ext]'
+                }
             },
-
             {
                 test: /\.(css|sass|scss)$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader',
-                ],
-            },
+                    'sass-loader'
+                ]
+            }
 
-        ],
+        ]
     },
     plugins: [
         new HtmlWebpackPluguin(
@@ -55,6 +53,6 @@ module.exports = {
             {
                 filename: 'styles.css'
             }
-        ),
+        )
     ]
 } 
